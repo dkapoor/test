@@ -1,27 +1,26 @@
-@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix dcat: <http://www.w3.org/ns/dcat#> .
-@prefix prov: <http://www.w3.org/ns/prov#> .
-@prefix void: <http://rdfs.org/ns/void#> .
-@prefix schema: <http://schema.org/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix bibo: <http://purl.org/ontology/bibo/> .
-@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
-@prefix dc: <http://purl.org/dc/terms/> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
-@prefix memex: <http://schema.dig.isi.edu/ontology/> .
+@prefix schema: <http://schema.org/> .
+@prefix memex: <http://memexproxy.com/ontology/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix rr: <http://www.w3.org/ns/r2rml#> .
 @prefix km-dev: <http://isi.edu/integration/karma/dev#> .
 
-_:node1a6r5hkcbx1 a km-dev:R2RMLMapping ;
-	km-dev:sourceName "sample-unicode.txt-WSP29WS5" ;
-	km-dev:modelPublicationTime "1450463252875"^^xsd:long ;
+_:node1a6rf0m7dx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "sample-unicode.txt" ;
+	km-dev:modelPublicationTime "1450473183469"^^xsd:long ;
 	km-dev:modelVersion "1.7" ;
 	km-dev:hasInputColumns "[[{\"columnName\":\"text\"}],[{\"columnName\":\"uri\"}]]" ;
 	km-dev:hasOutputColumns "[[{\"columnName\":\"text\"}],[{\"columnName\":\"uri\"}]]" ;
-	km-dev:hasModelLabel "sample-unicode.txt-WSP29WS5" ;
-	km-dev:hasBaseURI "http://test.com" ;
+	km-dev:hasModelLabel "sample-unicode.txt" ;
+	km-dev:hasBaseURI "http://test.com/" ;
 	km-dev:hasWorksheetHistory """[
     {
         \"tags\": [\"Transformation\"],
@@ -45,6 +44,44 @@ _:node1a6r5hkcbx1 a km-dev:R2RMLMapping ;
                     \"graphLabel\": \"\",
                     \"hasBaseURI\": true,
                     \"baseURI\": \"http://test.com\"
+                },
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetWorksheetPropertiesCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"properties\",
+                \"value\": {
+                    \"hasServiceProperties\": false,
+                    \"hasPrefix\": false,
+                    \"graphLabel\": \"\",
+                    \"hasBaseURI\": true,
+                    \"baseURI\": \"http://test.com/\"
                 },
                 \"type\": \"other\"
             },
@@ -183,43 +220,43 @@ _:node1a6r5hkcbx1 a km-dev:R2RMLMapping ;
     }
 ]""" .
 
-km-dev:TriplesMap_29f507a2-777b-433e-808f-687d0fbbc395 a rr:TriplesMap .
+km-dev:TriplesMap_576c58e7-eb6f-45d7-826a-c2a45d7f4b89 a rr:TriplesMap .
 
-_:node1a6r5hkcbx1 km-dev:hasTriplesMap km-dev:TriplesMap_29f507a2-777b-433e-808f-687d0fbbc395 .
+_:node1a6rf0m7dx1 km-dev:hasTriplesMap km-dev:TriplesMap_576c58e7-eb6f-45d7-826a-c2a45d7f4b89 .
 
-km-dev:TriplesMap_29f507a2-777b-433e-808f-687d0fbbc395 km-dev:isPartOfMapping _:node1a6r5hkcbx1 .
+km-dev:TriplesMap_576c58e7-eb6f-45d7-826a-c2a45d7f4b89 km-dev:isPartOfMapping _:node1a6rf0m7dx1 .
 
-_:node1a6r5hkcbx2 rr:tableName "sample-unicode.txt-WSP29WS5" ;
+_:node1a6rf0m7dx2 rr:tableName "sample-unicode.txt" ;
 	a rr:LogicalTable ;
-	km-dev:isPartOfMapping _:node1a6r5hkcbx1 .
+	km-dev:isPartOfMapping _:node1a6rf0m7dx1 .
 
-_:node1a6r5hkcbx1 km-dev:hasLogicalTable _:node1a6r5hkcbx2 .
+_:node1a6rf0m7dx1 km-dev:hasLogicalTable _:node1a6rf0m7dx2 .
 
-km-dev:TriplesMap_29f507a2-777b-433e-808f-687d0fbbc395 rr:logicalTable _:node1a6r5hkcbx2 ;
-	rr:subjectMap _:node1a6r5hkcbx3 .
+km-dev:TriplesMap_576c58e7-eb6f-45d7-826a-c2a45d7f4b89 rr:logicalTable _:node1a6rf0m7dx2 ;
+	rr:subjectMap _:node1a6rf0m7dx3 .
 
-_:node1a6r5hkcbx1 km-dev:hasSubjectMap _:node1a6r5hkcbx3 .
+_:node1a6rf0m7dx1 km-dev:hasSubjectMap _:node1a6rf0m7dx3 .
 
-_:node1a6r5hkcbx3 km-dev:isPartOfMapping _:node1a6r5hkcbx1 ;
+_:node1a6rf0m7dx3 km-dev:isPartOfMapping _:node1a6rf0m7dx1 ;
 	a rr:SubjectMap ;
 	km-dev:alignmentNodeId "http://schema.org/WebPage1" ;
 	rr:class schema:WebPage ;
 	rr:template "{uri}" ;
 	a km-dev:steinerTreeRootNode .
 
-km-dev:PredicateObjectMap_308135b4-c8a7-4ca3-b67d-2ca0cff85718 rr:predicate schema:text .
+km-dev:PredicateObjectMap_385d8f72-25bd-4f7f-9bb1-f4443ff3b3e1 rr:predicate schema:text .
 
-_:node1a6r5hkcbx4 rr:column "text" ;
+_:node1a6rf0m7dx4 rr:column "text" ;
 	a rr:ObjectMap ;
-	km-dev:isPartOfMapping _:node1a6r5hkcbx1 .
+	km-dev:isPartOfMapping _:node1a6rf0m7dx1 .
 
-_:node1a6r5hkcbx1 km-dev:hasObjectMap _:node1a6r5hkcbx4 .
+_:node1a6rf0m7dx1 km-dev:hasObjectMap _:node1a6rf0m7dx4 .
 
-km-dev:PredicateObjectMap_308135b4-c8a7-4ca3-b67d-2ca0cff85718 rr:objectMap _:node1a6r5hkcbx4 .
+km-dev:PredicateObjectMap_385d8f72-25bd-4f7f-9bb1-f4443ff3b3e1 rr:objectMap _:node1a6rf0m7dx4 .
 
-km-dev:TriplesMap_29f507a2-777b-433e-808f-687d0fbbc395 rr:predicateObjectMap km-dev:PredicateObjectMap_308135b4-c8a7-4ca3-b67d-2ca0cff85718 .
+km-dev:TriplesMap_576c58e7-eb6f-45d7-826a-c2a45d7f4b89 rr:predicateObjectMap km-dev:PredicateObjectMap_385d8f72-25bd-4f7f-9bb1-f4443ff3b3e1 .
 
-km-dev:PredicateObjectMap_308135b4-c8a7-4ca3-b67d-2ca0cff85718 a rr:PredicateObjectMap ;
-	km-dev:isPartOfMapping _:node1a6r5hkcbx1 .
+km-dev:PredicateObjectMap_385d8f72-25bd-4f7f-9bb1-f4443ff3b3e1 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a6rf0m7dx1 .
 
-_:node1a6r5hkcbx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_308135b4-c8a7-4ca3-b67d-2ca0cff85718 .
+_:node1a6rf0m7dx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_385d8f72-25bd-4f7f-9bb1-f4443ff3b3e1 .
