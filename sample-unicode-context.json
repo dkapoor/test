@@ -1,0 +1,9 @@
+{"@context": {
+    "text": {"@id": "http://schema.org/text"},
+    "a": "@type",
+    "WebPage": {
+        "@type": "@id",
+        "@id": "http://schema.org/WebPage"
+    },
+    "uri": "@id"
+}}
