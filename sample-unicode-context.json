@@ -5,5 +5,6 @@
         "@type": "@id",
         "@id": "http://schema.org/WebPage"
     },
-    "uri": "@id"
+    "uri": "@id",
+    "dateCreated": {"@id": "http://schema.org/dateCreated"}
 }}
